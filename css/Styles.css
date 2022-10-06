@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+
+}
+main{
+    display: flex;
+    width: 60rem;
+    column-gap: 2rem;
+}
+h1,p{
+    margin: 0;
+}
+h1{
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+}
+p{
+    color: hsl(236, 100%, 87%);
+}
+.left-section{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: .625rem;
+    min-height: 65vh;
+    width: 25%;
+}
+.left-section-upper{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: .625rem;
+    padding: 1.5rem;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+.profile-img{
+    width: 5rem;
+    border: 0.0925rem solid white;
+    border-radius: 50%;
+}
+.left-section-lower{
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:0 1.5rem;
+}
+.right-section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 75%;
+}
+.card{
+    width: 10rem;
+    border-radius: .625rem;
+    padding: 1.5rem;
+    height: 8rem;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 3rem;
+    z-index: 10;
+}
+.work{
+    background-color: hsl(15, 100%, 70%);
+    border-radius: .625rem;
+    min-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.study{
+    border-radius: .625rem;
+    background-color: hsl(348, 100%, 68%);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.social{
+    border-radius: .625rem;
+    background-color: hsl(264, 64%, 52%);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.self-care{
+    border-radius: .625rem;
+    background-color: hsl(43, 84%, 65%);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.play{
+    border-radius: .625rem;
+    background-color: hsl(195, 74%, 62%);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.exercise{
+    border-radius: .625rem;
+    background-color: hsl(145, 58%, 55%);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.section-img{
+    right: 0;
+    top: -.5rem;
+    z-index: -1;
+position: absolute;
+}
+
+.card-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.more-img{
+    width: 1rem;
+}
+.section-name{
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: white;
+}
+.daily-div-hide{
+    display: none;
+}
+.monthly-div-hide{
+    display: none;
+}
+.weekly-div-hide{
+    display: none;
+}
+.daily-div-show{
+    display: block;
+}
+.monthly-div-show{
+    display: block;
+}
+.weekly-div-show{
+    display: block;
+}
+.track-option:hover{
+cursor: pointer;
+    color: white;
+}
+.track-option-clicked{
+    color: white;
+}
+
+@media screen and (max-width:60.625rem) {
+    body{
+        min-height: 150vh;
+    
+    }
+    main{
+        width: 40rem;
+        align-items: flex-start;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .left-section-lower{
+        
+        min-height: 25vh;
+        
+    }
+}
+
+@media screen and (max-width:41.875rem) {
+    body{
+        min-height: 200vh;
+    }
+    main{
+        width: 22rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    .left-section{
+        width: 100%;
+        min-height: 4rem;
+    }
+    .right-section{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .left-section-upper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .profile-img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .left-section-lower{
+        min-height: 4rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card{
+        width: 87%;
+        height: 4rem;
+        
+    }
+    .card-bottom-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-row{
+        margin-bottom: 1rem;
+    }
+    .daily-div-show{
+        display: flex;
+    }
+    .monthly-div-show{
+        display: flex;
+    }
+    .weekly-div-show{
+        display: flex;
+    }
+    .daily-div-hide{
+        display: none;
+    }
+    .monthly-div-hide{
+        display: none;
+    }
+    .weekly-div-hide{
+        display: none;
+    }
+}

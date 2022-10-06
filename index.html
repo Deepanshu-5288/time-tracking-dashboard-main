@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+<link rel="stylesheet" href="css/Styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="left-section">
+    <div class="left-section-upper">
+      <img class="profile-img" src="images/image-jeremy.png" alt="image-jeremy">
+      <div class="profile-name-div">
+  <p>Report for</p>
+  <h1>Jeremy Robson</h1>
+</div>
+</div>
+<div class="left-section-lower">
+  <p class="track-option track-option-clicked">Daily</p>
+  <p class="track-option">Weekly</p>
+  <p class="track-option">Monthly</p>
+</div>
+</div>
+<div class="right-section">
+  <div class=" work">
+    <img class="section-img" src="images/icon-work.svg" alt="icon-work">
+    <div class="card ">
+      <div class="card-row">
+  <p class="section-name">Work</p>
+  <img class="more-img" src="images/more.png" alt="more">
+</div>
+<div class="daily-div  card-bottom-row">
+  <h1 class="current-hrs current-hrs-daily">5hrs</h1> <!-- daily -->
+  <p class="">Previous - <span class="previous-hrs previous-hrs-daily"> 7hrs</span></p>
+</div>
+  <div class="weekly-div weekly-div-hide card-bottom-row">
+  <h1 class="current-hrs current-hrs-weekly">5hrs</h1> <!-- daily -->
+  <p class="">Previous - <span class="previous-hrs previous-hrs-weekly"> 7hrs</span></p>
+</div>
+  <div class="monthly-div monthly-div-hide card-bottom-row">
+  <h1 class="current-hrs current-hrs-monthly">5hrs</h1> <!-- daily -->
+  <p class="">Previous - <span class="previous-hrs previous-hrs-monthly"> 7hrs</span></p>
+</div>
+  
+</div>
+</div>
+  <div class=" play">
+    <img class="section-img" src="images/icon-play.svg" alt="icon-play">
+    <div class="card ">
+  
+
+  <div class="card-row">
+    <p class="section-name">Play</p> 
+    <img class="more-img" src="images/more.png" alt="more">
+  </div>
+  <div class="daily-div card-bottom-row">
+    <h1 class="current-hrs current-hrs-daily">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-daily"> 7hrs</span></p>
+  </div>
+    <div class="weekly-div weekly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-weekly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-weekly"> 7hrs</span></p>
+  </div>
+    <div class="monthly-div monthly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-monthly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-monthly"> 7hrs</span></p>
+  </div>
+</div>
+</div>
+  <div class=" study">
+    <img class="section-img" src="images/icon-study.svg" alt="icon-study">
+    <div class="card ">
+  
+
+  <div class="card-row">
+    <p class="section-name">Study</p>
+    <img class="more-img" src="images/more.png" alt="more">
+  </div>
+  <div class="daily-div card-bottom-row">
+    <h1 class="current-hrs current-hrs-daily">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-daily"> 7hrs</span></p>
+  </div>
+    <div class="weekly-div weekly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-weekly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-weekly"> 7hrs</span></p>
+  </div>
+    <div class="monthly-div monthly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-monthly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-monthly"> 7hrs</span></p>
+  </div>
+</div>
+</div>
+  <div class=" exercise">
+    <img class="section-img" src="images/icon-exercise.svg" alt="icon-exercise">
+    <div class="card ">
+  
+
+  <div class="card-row">
+    <p class="section-name">Exercise</p>
+    <img class="more-img" src="images/more.png" alt="more">
+  </div>
+  <div class="daily-div card-bottom-row">
+    <h1 class="current-hrs current-hrs-daily">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-daily"> 7hrs</span></p>
+  </div>
+    <div class="weekly-div weekly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-weekly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-weekly"> 7hrs</span></p>
+  </div>
+    <div class="monthly-div monthly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-monthly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-monthly"> 7hrs</span></p>
+  </div>
+</div>
+</div>
+  <div class=" social">
+    <img class="section-img" src="images/icon-social.svg" alt="icon-social">
+    <div class="card ">
+  
+
+  <div class="card-row">
+    <p class="section-name"> Social</p>
+    <img class="more-img" src="images/more.png" alt="more">
+  </div>
+  <div class="daily-div card-bottom-row">
+    <h1 class="current-hrs current-hrs-daily">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-daily"> 7hrs</span></p>
+  </div>
+    <div class="weekly-div weekly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-weekly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-weekly"> 7hrs</span></p>
+  </div>
+    <div class="monthly-div monthly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-monthly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-monthly"> 7hrs</span></p>
+  </div>
+</div>
+</div>
+  <div class=" self-care">
+    <img class="section-img" src="images/icon-self-care.svg" alt="icon-self-care">
+    <div class="card ">
+  
+
+  <div class="card-row">
+    <p class="section-name"> Self Care</p>
+    <img class="more-img" src="images/more.png" alt="more">
+  </div>
+  <div class="daily-div card-bottom-row">
+    <h1 class="current-hrs current-hrs-daily">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-daily"> 7hrs</span></p>
+  </div>
+    <div class="weekly-div weekly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-weekly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-weekly"> 7hrs</span></p>
+  </div>
+    <div class="monthly-div monthly-div-hide card-bottom-row">
+    <h1 class="current-hrs current-hrs-monthly">5hrs</h1> <!-- daily -->
+    <p class="">Previous - <span class="previous-hrs previous-hrs-monthly"> 7hrs</span></p>
+  </div>
+</div>
+</div>
+</div>
+</main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>
